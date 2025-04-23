@@ -1,0 +1,2 @@
+helm install metrics -n metrics . \
+  --set args="{--kubelet-insecure-tls,--kubelet-preferred-address-types=InternalIP}"
