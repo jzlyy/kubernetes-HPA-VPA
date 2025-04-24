@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 
+  namespace: 
+  labels:
+    app: 
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  replicas: 
+  selector:
+    matchLabels:
+      app: 
+  template:
+    metadata:
+      labels:
+        app: 
+    spec:
+      containers:
+        - name: 
+          image: 
+          ports:
+            - containerPort: 
+              name: 
+          resources:
+            requests:
+              cpu: 100m
+              memory: 125Mi
+            limits:
+              cpu: 200m
+              memory: 250Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: 
+  namespace: 
+spec:
+  selector:
+    app: 
+  ports:
+    - protocol: TCP
+      port: 
+      targetPort: 
+  type: ClusterIP
+
