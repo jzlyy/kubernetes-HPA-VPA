@@ -1,15 +1,15 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: hpa
-  namespace: kafka
+  name: 
+  namespace: 
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: StatefulSet
-    name: kafka-controller
+    name: 
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 6
   metrics:
     - type: Pods
       pods:
