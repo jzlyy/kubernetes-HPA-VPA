@@ -1,53 +1,65 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
-  namespace: nginx
+  name: 
+  namespace: 
   labels:
-    app: nginx
+    app: 
 spec:
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
   replicas: 4
   selector:
     matchLabels:
-      app: nginx
+      app: 
   template:
     metadata:
       labels:
-        app: nginx
+        app: 
     spec:
       containers:
         - name: node-exporter
           image: prom/node-exporter:v1.9.1
           ports:
             - containerPort: 9100
-              name: nginx
+              name: 
           resources:
             requests:
               cpu: 100m
               memory: 125Mi
             limits:
               cpu: 200m
-              memory: 250Mi
+              memory: 175Mi
+          livenessProbe:
+            httpGet:
+              port: 9100
+              path: /metrics
+            initalDelaySeconds:
+            periodSeconds:
+            timeoutSeconds:
+            failureThshold:
+          readinressProbe:
+            httpGet:
+              port: 9100
+              path: /metrics
+            initalDelaySeconds:
+            periodSeconds:
+            successThshold:
+            failureThshold:
+
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-nginx
-  namespace: nginx
+  name: 
+  namespace: 
   labels:
-    app: nginx
+    app: 
 spec:
   selector:
-    app: nginx
+    app: 
   ports:
     - protocol: TCP
       port: 9100
-      targetPort: nginx
-      name: metrics
-  type: NodePort
+      targetPort: 
+      name: 
+  type: ClusterIP
 
