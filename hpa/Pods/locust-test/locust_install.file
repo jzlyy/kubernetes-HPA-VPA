@@ -1,0 +1,14 @@
+###### Install locust in a Python environment ######
+
+### Configure a pip accelerator.
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+
+### Install locust using pip3.
+pip3 install locust
+
+
+
+### Test
+locust -f quick_test.py
+
+
