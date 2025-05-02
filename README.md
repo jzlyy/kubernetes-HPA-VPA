@@ -1,5 +1,5 @@
 # kubernetes-HPA-VPA
-"Elastic horizontal and vertical scaling of pod quantity and resources based on HPA/VPA"
+Dynamically scale the number of Pods and resource usage based on HPA/VPA.
 
 ## HPA Scaling
 ### Scaling based on Resource metrics (CPU, Memory)
