@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name:
+  namespace:
+spec:
+  hard:
+    resources.cpu:
+    resources.memory:
+    limits.cpu:
+    limits.memory:
+    resources.storage:
+    persistentvolumeclaims:
+    pods:
+    services:
+    configmaps:
+    secrets:
