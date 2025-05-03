@@ -1,4 +1,6 @@
 # kubernetes-HPA-VPA
+[![GitHub License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 Dynamically scale the number of Pods and resource usage based on HPA/VPA.
 
 ## HPA (Horizontal Pod Autoscaler)
