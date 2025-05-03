@@ -16,3 +16,7 @@ Implement optimal VPA scaling for CPU/Memory using ResourceQuota and LimitRange 
 ## Prometheus monitoring system
 ### Integrate kube-prometheus-stack for granular scenario monitoring
 Integrate Prometheus, Grafana, and Alertmanager via the kube-prometheus-stack to implement an observable resource dashboard and establish a rapid alerting system for resource shortages.
+
+## Security Policy
+To report security vulnerabilities, please see [SECURITY.md](SECURITY.md)。
+
