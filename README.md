@@ -10,6 +10,7 @@ Use Prometheus-Adapter to convert Prometheus metrics into parameters recognizabl
 ## VPA (Vertical Pod Autoscaler) for vertical scaling
 ### Dynamic scaling of CPU/Memory based on VPA resource monitors
 Implement optimal VPA scaling for CPU/Memory using ResourceQuota and LimitRange to enforce resource constraints
-### Integrate kube-prometheus-stack for granular scenario monitoring
-Implement detailed monitoring for specific scenarios by integrating the kube-prometheus-stack.
 
+## Prometheus monitoring system
+### Integrate kube-prometheus-stack for granular scenario monitoring
+Integrate Prometheus, Grafana, and Alertmanager via the kube-prometheus-stack to implement an observable resource dashboard and establish a rapid alerting system for resource shortages.
