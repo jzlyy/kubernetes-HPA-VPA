@@ -20,3 +20,5 @@ Integrate Prometheus, Grafana, and Alertmanager via the kube-prometheus-stack to
 ## Security Policy
 To report security vulnerabilities, please see [SECURITY.md](SECURITY.md)。
 
+## Start
+The team can refer to my code solution and make reasonable modifications based on their environmental requirements.
